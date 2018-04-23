@@ -108,6 +108,7 @@ export default {
     },
     setSort() {
       const el = document.querySelectorAll('.el-table__body-wrapper > table > tbody')[0]
+
       this.sortable = Sortable.create(el, {
         onEnd: evt => {
           const tempIndex = this.newList.splice(evt.oldIndex, 1)[0]

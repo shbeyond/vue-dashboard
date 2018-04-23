@@ -93,9 +93,11 @@ export default {
           return v
         })
         this.listLoading = false
+        console.log(this.list)
       })
     },
     cancelEdit(row) {
+
       row.title = row.originalTitle
       row.edit = false
       this.$message({
